@@ -1,14 +1,22 @@
 import React, { FunctionComponent } from "react";
 import { Form } from "semantic-ui-react";
 
-interface Params {
-    setInputData: (value: string) => void;
+interface Props {
+    setFormData: (name: string, value: string | boolean) => void;
+    getImages: () => void;
 }
-export const InputForm: FunctionComponent<Params> = props => (
+
+export const InputForm: FunctionComponent<Props> = ({ setFormData, getImages }) => (
     <Form>
-        <Form.Input onChange={(e, { value }) => props.setInputData(value)} />
-        <Form.Checkbox label="I agree to the Terms and Conditions" />
-        <Form.Button type="submit">Submit</Form.Button>
+        <Form.Input name="inputBox" onChange={(e, { name, value }) => setFormData(name as string, value as string)} />
+        <Form.Checkbox
+            name="checkbox"
+            label="Find a single image"
+            onChange={(e, { name, checked }) => setFormData(name as string, checked as boolean)}
+        />
+        <Form.Button type="submit" onClick={() => getImages()}>
+            Search
+        </Form.Button>
     </Form>
 );
 

@@ -5,7 +5,7 @@ export const NavBar: FunctionComponent = () => (
     <div>
         <Menu fixed="top" inverted>
             <Container>
-                <Menu.Item as="a" header>
+                <Menu.Item header>
                     <Image
                         size="mini"
                         src="http://www.mrdanortiz.com/img/profile-ddm2.png"
@@ -13,7 +13,6 @@ export const NavBar: FunctionComponent = () => (
                     />
                     Sample React App
                 </Menu.Item>
-                <Menu.Item as="a">Home</Menu.Item>
             </Container>
         </Menu>
     </div>
