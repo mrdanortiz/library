@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { Container, Dropdown, Image, Menu } from "semantic-ui-react";
+import { Container, Image, Menu } from "semantic-ui-react";
 
 export const NavBar: FunctionComponent = () => (
     <div>

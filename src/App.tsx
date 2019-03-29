@@ -26,15 +26,15 @@ interface Props {
 class App extends Component<Props> {
     public render() {
         return (
-            <Container className="keep-fixed" textAlign="center">
+            <Container textAlign="center">
                 <NavBar />
-                <Container text={true} style={{ marginTop: 40, padding: 10 }}>
+                <Container text={true} style={{ marginTop: 90 }}>
                     <p>Enter a search term to find images</p>
                 </Container>
-                <Container style={{ width: 600, padding: 10, marginTop: 40 }}>
+                <Container style={{ width: 600, marginTop: 20 }}>
                     <InputForm setFormData={this.props.setFormData} getImages={this.props.getImages} />
                 </Container>
-                <Container style={{ width: 600, padding: 10, marginTop: 40 }}>
+                <Container style={{ width: 600, padding: 20 }}>
                     <GridLayout splashImages={this.props.splashImages} />
                 </Container>
             </Container>
