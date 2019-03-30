@@ -14,7 +14,7 @@ interface Props {
     }>;
 }
 
-const GridLayout: FunctionComponent<Props> = ({ splashImages }) => (
+export const GridLayout: FunctionComponent<Props> = ({ splashImages }) => (
     <Container>
         <Responsive>
             {splashImages ? (
