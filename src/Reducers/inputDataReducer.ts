@@ -5,6 +5,9 @@ const initialState = {
         inputBox: undefined,
         checkbox: undefined,
     },
+    errors: {
+        inputBox: false,
+    },
 };
 
 export const inputDataReducer = (state = initialState, action: any) => {
@@ -14,6 +17,14 @@ export const inputDataReducer = (state = initialState, action: any) => {
                 ...state,
                 inputFormData: {
                     ...state.inputFormData,
+                    [action.name]: action.value,
+                },
+            };
+        case actionType.SET_INPUT_ERROR:
+            return {
+                ...state,
+                errors: {
+                    ...state.errors,
                     [action.name]: action.value,
                 },
             };
