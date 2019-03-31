@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="ui container"
+>
+  <div>
+    <div
+      className="ui center aligned middle aligned grid"
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    >
+      <div
+        className="one column row"
+      >
+        <div
+          className="eight wide computer sixteen wide mobile column"
+        >
+          <img
+            alt="A gray and white husky drinking water out of a Boxed Water carton"
+            className="ui medium bordered circular centered image"
+            src="https://images.unsplash.com/photo-1553531384-411a247ccd73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjYzNTYzfQq=40&fit=crop&w=300&h=300"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
