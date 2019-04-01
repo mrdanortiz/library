@@ -29,5 +29,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Live App
 
 To try the app out visit:  
-http://dans-sample-react-app.s3-website-us-east-1.amazonaws.com/
+http://mrdanortiz.com
 
