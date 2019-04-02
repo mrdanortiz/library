@@ -8,10 +8,13 @@ export const NavBar: FunctionComponent = () => (
                 <Menu.Item header>
                     <Image
                         size="mini"
-                        src="http://www.mrdanortiz.com/img/profile-ddm2.png"
+                        src="https://s3.amazonaws.com/www.mrdanortiz.com/img/profile-cir.png"
                         style={{ marginRight: "1.5em" }}
                     />
                     Sample React App
+                </Menu.Item>
+                <Menu.Item href="https://github.com/mrdanortiz/sample-react-app" target="_blank">
+                    Source Code
                 </Menu.Item>
             </Container>
         </Menu>
