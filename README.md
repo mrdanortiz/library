@@ -1,6 +1,6 @@
 ## Purpose
 
-This is just a sample react app that I built to show my knowledge and style of coding. The professional projects that I work on are in private bitbucket repos.
+This is just a sample react app that I built to show my knowledge and style. The professional projects that I work on are in private bitbucket repos.
 
 ## Available Scripts
 
